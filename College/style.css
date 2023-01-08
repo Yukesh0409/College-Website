@@ -1,0 +1,413 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: white;
+}
+
+nav {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 77px;
+}
+
+nav ul {
+
+  list-style: none;
+  margin: 0;
+  padding:2.1999999999999em 2em;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0;
+  padding-inline: 142px;
+  transition: transform .2s;
+}
+nav ul li:hover {
+  transform: scale(1.5);
+  color: rgb(220, 120, 0);
+  
+}
+
+nav a {
+  width: 100%;
+  height: 100%;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-family: Ubuntu;
+  font-size: 1.15em;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  transition: .25s ease-in-out;
+  
+}
+
+nav a:hover {
+ 
+  color: rgb(220, 120, 0);
+  
+}
+
+.nav-bg {
+  content: '';
+  position: absolute;
+  display: block;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgb(255, 255, 255);
+  transition: .45s ease-in-out;
+}
+
+.bg-hidden {
+  top: -100;
+  opacity: 1;
+}
+
+.bg-visible {
+  top: 0;
+  opacity: 0.97;
+}
+
+h1 {
+  text-align: center;
+  font-family: Ubuntu;
+  letter-spacing: 1px;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 584px;
+  background: rgb(50, 50, 50);
+  background: url(https://images.shiksha.com/mediadata/images/1594191767phpanCpAZ.jpeg) no-repeat 50% 50% fixed;
+  background-size: 130%;
+  overflow: hidden;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  padding: .3em;
+  font-size: 3em;
+  font-weight: lighter;
+}
+.hero1 h1{
+    position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  padding: .3em;
+  font-size: 3em;
+  font-weight: lighter;
+}
+
+.content-wrapper {
+  width: 80%;
+  height: auto;
+  padding: 4em 10%;
+  
+}
+
+.content-wrapper h1 {
+  margin: 0;
+  color: rgb(220, 120, 0);
+}
+
+.content-wrapper p {
+  font-family: "Open Sans";
+  text-indent: 1.5em;
+}
+hr {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+ }
+
+ 
+
+.content-wrapper1 {
+    width: 80%;
+    height: auto;
+    padding: 4em 10%;
+
+    
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: #C58940;
+    transition: transform .2s;
+    
+  }
+  .card:hover {
+    transform: scale(1.15); 
+  }
+  .title {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+  }
+  #man{
+    text-align: center;
+  }
+  .content2{
+    display: flex;
+  justify-content: center;
+  }
+  .foot{
+    height: 110px;
+    background-color: black;
+    padding-top: 10px;
+  }
+  #footi{
+    text-align: center;
+    color: white;
+    
+  }
+  #footii{
+    text-align: center;
+    color: yellow;
+    
+  }
+
+
+.container {
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 1000px;
+  }
+  
+  .carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; 
+    animation: rotate360 60s infinite forwards linear;
+   
+    
+  }
+  .carousel__face { 
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow:inset 0 0 0 2000px rgba(0,0,0,0);
+    display: flex;
+  }
+  
+  span {
+    margin: auto;
+    font-size: 2rem;
+  }
+
+ 
+  
+  .carousel__face:nth-child(1) {
+    background-image: url("https://stjosephs.ac.in/today30102021/One.jpg");
+    transform: rotateY(  0deg) translateZ(430px); }
+  .carousel__face:nth-child(2) { 
+    background-image: url("https://stjosephs.ac.in/sliderinfra/newslide/3.jpg");
+      transform: rotateY( 40deg) translateZ(430px); }
+  .carousel__face:nth-child(3) {
+    background-image: url("https://stjosephs.ac.in/images/singlepage_images/08.jpg");
+    transform: rotateY( 80deg) translateZ(430px); }
+  .carousel__face:nth-child(4) {
+    background-image: url("https://stjosephs.ac.in/images/singlepage_images/mess4.jpg");
+    transform: rotateY(120deg) translateZ(430px); }
+  .carousel__face:nth-child(5) { 
+    background-image: url("https://stjosephs.ac.in/images/singlepage_images/girlshostel.jpg");
+   transform: rotateY(160deg) translateZ(430px); }
+  .carousel__face:nth-child(6) { 
+    background-image: url("https://stjosephs.ac.in/sliderinfra/270420228.jpg");
+   transform: rotateY(200deg) translateZ(430px); }
+  .carousel__face:nth-child(7) { 
+    background-image: url("https://images.shiksha.com/mediadata/images/1594191797phpI1s99B.jpeg");
+   transform: rotateY(240deg) translateZ(430px); }
+  .carousel__face:nth-child(8) {
+    background-image: url("https://stjosephs.ac.in/today30102021/Seven.jpg");
+    transform: rotateY(280deg) translateZ(430px); }
+  .carousel__face:nth-child(9) {
+    background-image: url("https://stjosephs.ac.in/sliderinfra/newslide/3.jpg");
+    transform: rotateY(320deg) translateZ(430px); }
+  
+  
+  
+  @keyframes rotate360 {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(-360deg);
+    }
+  }
+  
+  .carousel1 {
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .slides {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+  
+  .slides::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .slides-item {
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    flex-shrink: 0;
+    font-size: 100px;
+    height: 600px;
+    justify-content: center;
+    margin: 0 1rem;
+    position: relative;
+    scroll-snap-align: start;
+    transform: scale(1);
+    transform-origin: center center;
+    transition: transform .5s;
+    width: 100%;
+  }
+  
+  .carousel__nav {
+    padding: 1.25rem .5rem;
+  }
+  
+  .slider-nav {
+    align-items: center;
+    background-color: #ddd;
+    border-radius: 50%;
+    color: #000;
+    display: inline-flex;
+    height: 1.5rem;
+    justify-content: center;
+    padding: .5rem;
+    position: relative;
+    text-decoration: none;
+    width: 1.5rem;
+  }
+  
+  .slider-nav:hover,
+  .slider-nav:active {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .slide-1 {
+    background-image: url(https://news.workforce.com/wp-content/uploads/sites/2/2018/12/AI-is-coming-%E2%80%94-and-HR-is-not-prepared.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+  .slide-2 {
+    background-image: url(https://www.uopeople.edu/wp-content/uploads/2019/01/The-Basics-of-Computer-Science.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .slide-3 {
+    background-image: url(https://gecskp.ac.in/img/ec1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .slide-4 {
+    background-image: url(https://images.shiksha.com/mediadata/images/articles/1538648745phpWfy7Lc.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .slide-5 {
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/1/416/19/artistic-mechanical-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .carousel__skip-link {
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    width: 1px;
+  }
+  
+  .carousel__skip-link:focus {
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    font-size: 30px;
+    height: 680px;
+    justify-content: center;
+    opacity: .8;
+    text-decoration: none;
+    width: 100%;
+    z-index: 1;
+  }
+
+ .course{
+    width: 50%;
+    padding-left: 379px;
+ }
+ .hero1 {
+    position: relative;
+    width: 100%;
+    height: 584px;
+    background: rgb(50, 50, 50);
+    background: url(https://stjosephs.ac.in/today30102021/Six.jpg) no-repeat 50% 50% fixed;
+    background-size: 130%;
+    overflow: hidden;
+  }
+ 
+  
+  .hero2 {
+    position: relative;
+    width: 100%;
+    height: 584px;
+    background: rgb(50, 50, 50);
+    background: url(https://stjosephs.ac.in/images/singlepage_images/08.jpg) no-repeat 50% 50% fixed;
+    background-size: 130%;
+    overflow: hidden;
+  }
+  .coni{
+   
+    width: 100%;
+    height: 584px;
+   
+    background: url(https://stjosephs.ac.in/Daily/Centre%2020223.jpg) no-repeat 50% 50% ;
+    background-size: contain;
+    
+    overflow: hidden;
+    
+
+  }
+  .conform{
+    text-align: center;
+  }
+  .colm5{
+    text-align: center;
+  }
